@@ -1,0 +1,41 @@
+[27-Dec-2024 02:47:39 Europe/Berlin] PHP Warning:  Undefined array key "REMOTE_ADDR" in C:\xampp\htdocs\fitness_gym\config\security_config.php on line 172
+[27-Dec-2024 02:47:39 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'fitness_gym.banned_ips' doesn't exist in C:\xampp\htdocs\fitness_gym\config\security_config.php:159
+Stack trace:
+#0 C:\xampp\htdocs\fitness_gym\config\security_config.php(159): mysqli->prepare('\n        SELECT...')
+#1 C:\xampp\htdocs\fitness_gym\config\security_config.php(172): isIPBanned(NULL)
+#2 C:\xampp\htdocs\fitness_gym\tests\test_security.php(3): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\fitness_gym\config\security_config.php on line 159
+[27-Dec-2024 02:53:01 Europe/Berlin] PHP Warning:  Undefined array key "REMOTE_ADDR" in C:\xampp\htdocs\fitness_gym\config\security_config.php on line 172
+[27-Dec-2024 02:53:01 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'fitness_gym.banned_ips' doesn't exist in C:\xampp\htdocs\fitness_gym\config\security_config.php:159
+Stack trace:
+#0 C:\xampp\htdocs\fitness_gym\config\security_config.php(159): mysqli->prepare('\n        SELECT...')
+#1 C:\xampp\htdocs\fitness_gym\config\security_config.php(172): isIPBanned(NULL)
+#2 C:\xampp\htdocs\fitness_gym\tests\test_security.php(3): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\fitness_gym\config\security_config.php on line 159
+[27-Dec-2024 02:55:47 Europe/Berlin] PHP Fatal error:  Cannot redeclare FileUploadHandler::getFileInfo() in C:\xampp\htdocs\fitness_gym\includes\utils\FileUploadHandler.php on line 311
+[27-Dec-2024 02:59:31 Europe/Berlin] PHP Warning:  Undefined array key "REMOTE_ADDR" in C:\xampp\htdocs\fitness_gym\includes\utils\TwoFactorAuth.php on line 32
+[27-Dec-2024 02:59:31 Europe/Berlin] PHP Warning:  Undefined array key "HTTP_USER_AGENT" in C:\xampp\htdocs\fitness_gym\includes\utils\TwoFactorAuth.php on line 33
+[27-Dec-2024 02:59:31 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in C:\xampp\htdocs\fitness_gym\includes\utils\ErrorLogger.php:44
+Stack trace:
+#0 C:\xampp\htdocs\fitness_gym\includes\utils\ErrorLogger.php(44): mysqli_stmt->bind_param('ssssisiss', 'security', '2FA code genera...', NULL, 'C:\\xampp\\htdocs...', 63, '[{"file":"C:\\\\x...', '{"get":[],"post...', NULL, NULL, NULL)
+#1 C:\xampp\htdocs\fitness_gym\includes\utils\TwoFactorAuth.php(63): ErrorLogger->logError('security', '2FA code genera...', NULL, Array)
+#2 C:\xampp\htdocs\fitness_gym\tests\test_security.php(42): TwoFactorAuth->generateAndSendCode(1, 'test@example.co...')
+#3 C:\xampp\htdocs\fitness_gym\tests\test_security.php(112): runTests(Object(SecurityManager))
+#4 {main}
+  thrown in C:\xampp\htdocs\fitness_gym\includes\utils\ErrorLogger.php on line 44
+[27-Dec-2024 03:03:29 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in C:\xampp\htdocs\fitness_gym\includes\utils\ErrorLogger.php:47
+Stack trace:
+#0 C:\xampp\htdocs\fitness_gym\includes\utils\ErrorLogger.php(47): mysqli_stmt->bind_param('ssssisiss', 'security', '2FA code genera...', NULL, 'C:\\xampp\\htdocs...', 54, '[{"file":"C:\\\\x...', '{"get":[],"post...', NULL, '127.0.0.1', 'CLI')
+#1 C:\xampp\htdocs\fitness_gym\includes\utils\TwoFactorAuth.php(54): ErrorLogger->logError('security', '2FA code genera...', NULL, Array)
+#2 C:\xampp\htdocs\fitness_gym\tests\test_security.php(42): TwoFactorAuth->generateAndSendCode(1, 'test@example.co...')
+#3 C:\xampp\htdocs\fitness_gym\tests\test_security.php(112): runTests(Object(SecurityManager))
+#4 {main}
+  thrown in C:\xampp\htdocs\fitness_gym\includes\utils\ErrorLogger.php on line 47
+[27-Dec-2024 03:04:31 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at "localhost" port 25, verify your "SMTP" and "smtp_port" setting in php.ini or use ini_set() in C:\xampp\htdocs\fitness_gym\includes\utils\ErrorLogger.php on line 104
+[27-Dec-2024 03:04:33 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at "localhost" port 25, verify your "SMTP" and "smtp_port" setting in php.ini or use ini_set() in C:\xampp\htdocs\fitness_gym\includes\utils\ErrorLogger.php on line 104
+[27-Dec-2024 14:19:43 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function setFlashMessage() in C:\xampp\htdocs\fitness_gym\member\subscribe.php:20
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\fitness_gym\member\subscribe.php on line 20

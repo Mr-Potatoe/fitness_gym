@@ -1,0 +1,345 @@
+/* Layout and spacing */
+main {
+    padding-left: 300px;
+    padding-top: 20px;
+}
+
+.container {
+    width: 95%;
+    max-width: none;
+    padding: 0;
+    margin: 0 20px;
+}
+
+/* Card styles */
+.card {
+    margin: 0;
+    position: relative;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14);
+    border: 1px solid #e0e0e0;
+}
+
+.card .card-content {
+    padding: 20px;
+    min-height: calc(100vh - 120px);
+    border-radius: 2px;
+}
+
+.card .card-title {
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    margin: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 20px;
+}
+
+/* Floating action button */
+.btn-floating.halfway-fab {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+/* Table styles */
+.table-container {
+    margin: 0;
+    padding-top: 10px;
+}
+
+.table-container table {
+    width: 100%;
+}
+
+table.striped > tbody > tr:hover {
+    background-color: #f5f5f5;
+}
+
+table th {
+    font-weight: 500;
+    color: #616161;
+    padding: 15px 12px;
+}
+
+table td {
+    padding: 12px;
+}
+
+/* Modal styles */
+.modal {
+    max-height: 90%;
+    width: 60%;
+    border-radius: 4px;
+    max-width: 600px;
+}
+
+.modal .modal-content {
+    padding: 30px;
+}
+
+.modal h4 {
+    margin: 0 0 25px 0;
+    font-size: 24px;
+    font-weight: 400;
+    color: #1565C0;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #1565C0;
+}
+
+.modal .row {
+    margin-bottom: 0;
+}
+
+.modal .input-field {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.modal .input-field input,
+.modal .input-field textarea {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+
+.modal .input-field input:focus,
+.modal .input-field textarea:focus {
+    border-color: #1565C0;
+    box-shadow: none;
+}
+
+.modal .input-field label {
+    color: #666;
+    left: 15px;
+}
+
+.modal .input-field input:focus + label,
+.modal .input-field textarea:focus + label {
+    color: #1565C0;
+}
+
+.modal textarea.materialize-textarea {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    min-height: 120px;
+}
+
+.modal .modal-footer {
+    padding: 20px 30px;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #e0e0e0;
+}
+
+.modal .modal-footer .btn-flat {
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 500;
+    min-width: 88px;
+}
+
+.modal .modal-footer .waves-effect.waves-green {
+    background-color: #1565C0;
+    color: white;
+}
+
+.modal .modal-footer .waves-effect.waves-red {
+    color: #666;
+    border: 1px solid #ddd;
+}
+
+/* Hover effects */
+.modal .modal-footer .waves-effect.waves-green:hover {
+    background-color: #1976D2;
+}
+
+.modal .modal-footer .waves-effect.waves-red:hover {
+    background-color: #f5f5f5;
+}
+
+/* Features list */
+.features-list {
+    margin: 0;
+    border: none;
+}
+
+.features-list .collection-item {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 12px 0;
+}
+
+.features-list .collection-item:last-child {
+    border-bottom: none;
+}
+
+.features-list .material-icons {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* Action buttons */
+.btn-small {
+    padding: 0 8px;
+    margin-right: 4px;
+}
+
+.btn-small i.material-icons {
+    font-size: 18px;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 992px) {
+    main {
+        padding-left: 0;
+        padding-top: 15px;
+    }
+    
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0 15px;
+    }
+    
+    .card .card-content {
+        padding: 20px;
+        min-height: calc(100vh - 120px);
+    }
+    
+    .modal {
+        width: 90%;
+    }
+    
+    .modal .modal-content {
+        padding: 20px;
+    }
+    
+    .modal .modal-footer {
+        padding: 15px 20px;
+    }
+    
+    .card .card-title {
+        padding-right: 56px;
+    }
+    
+    #featuresModal .features-list {
+        margin: 0 -20px;
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .container {
+        width: calc(100% - 40px);
+    }
+}
+
+/* Keep existing styles for fixed header and sidebar */ 
+
+.action-buttons {
+    white-space: nowrap;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.action-buttons .btn-floating {
+    transition: transform 0.2s;
+}
+
+.action-buttons .btn-floating:hover {
+    transform: scale(1.1);
+}
+
+/* Filter section */
+.filter-section {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.filter-section .input-field {
+    margin: 0;
+    min-width: 200px;
+}
+
+/* Status display */
+.status-indicator {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.status-indicator i {
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+/* Plan row status */
+.inactive-plan {
+    background-color: rgba(255, 0, 0, 0.02);
+}
+
+.inactive-plan td {
+    opacity: 0.8;
+}
+
+/* Card title with flex layout */
+.flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.flex-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Table header with filter */
+.table-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/* Status filter */
+.status-filter {
+    margin: 0;
+    min-width: 150px;
+}
+
+.status-filter .select-wrapper input.select-dropdown {
+    margin: 0;
+    font-size: 14px;
+    height: 2rem;
+    line-height: 2rem;
+}
+
+.status-filter label {
+    font-size: 0.8rem;
+    top: -20px;
+}
+
+.delete-member i {
+    font-size: 18px;
+}
+
+.action-buttons .delete-member:hover {
+    background-color: #d32f2f;
+}
